@@ -81,7 +81,7 @@ function getTrueShape2(shape: Shape):string{
             return "It is circle";
         case "square":
             return "It is square";
-        default:
+        default: // best for future proof 
             const _futureProof: never = shape;
             return _futureProof;
     }
