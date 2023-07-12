@@ -7,7 +7,7 @@ function countTruthy(arg: null | string | number): boolean {
             else return false;
         }
         else{
-            return true;
+            return arg==0?false:true;
         }
     }
     else return false;
@@ -43,6 +43,7 @@ function getPet(animal: Fish | Dog):string{
         
         return "It is dog";
     } 
+     
     return "It is fish";
 }
 

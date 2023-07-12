@@ -7,7 +7,7 @@ function createUser({name: string,dob: number}){
 createUser({name: "jeevan",dob: 2612});
 
 //functions returning an empty object
-function getUser():{}{
+function getUser():{} /*Same as object */{
     return {};
 }
 

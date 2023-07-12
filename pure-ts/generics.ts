@@ -5,25 +5,35 @@ function identityOne(arg: number): number{
     return arg;
 };
 
-
+//accepts argument and returns any argument
 function identityTwo(arg: any): any{
     return arg;
 }
 
 
 interface person{
+    kind: "person",
     age: number,
     sex: string
 }
 
-function identity<Type>(arg: Type): number {
-    if("age" in arg){
+function identity<Type extends person>(arg: Type ): number {
+    if((arg as person).kind!==undefined){
+        // return 55;
         return arg.age;
     }
     return 5;
 }
 
-identity<person>({age: 5,sex: "male"});
+function identityEight(arg: person): number {
+    // if((arg as person).kind!==undefined){
+        
+        return arg.age;
+    // }
+    // return arg;
+}
+
+identity<person>({kind: "person",age: 5,sex: "male"});
 // identity({age: 5,sex: "male"});
 
 function identityFive<t>(arg: t[]): t{

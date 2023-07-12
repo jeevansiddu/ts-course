@@ -11,8 +11,8 @@
     accessible: boolean
  }
 
- let user1: User | Admin = {name: "jevan",id: 1};
- user1 = {username: "siddu",accessible: true} //also allowed
+ let user1: User | Admin = {name: "jeevan",id: 1};
+ user1 = {username: "siddu",accessible: true ,id:1} //also allowed
 
  function getId(id : number | string){
     // console.log(id.toUpperCase()); // only comman attributs for both number and string will work
