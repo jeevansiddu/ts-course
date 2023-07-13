@@ -6,3 +6,4 @@ const enum SeatChoice {
 
 let seat  = SeatChoice.AISLE;
 seat = SeatChoice.MIDDLE;
+//dciodkojdiokjfvikljsdio
